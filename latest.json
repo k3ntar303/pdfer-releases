@@ -1,0 +1,7 @@
+{
+  "versionCode": 90,
+  "versionName": "1.0.90",
+  "apk": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.apk",
+  "msi": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.msi",
+  "notes": "1.0.90: テスト用ブランチ(この段階の大きさ・右ドラッグのずれ・半角の間隔・連続線の Shift・Esc で1つ前・スタンプ)をまとめて配布。更新情報と使�"
+}
