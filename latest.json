@@ -1,0 +1,7 @@
+{
+  "versionCode": 104,
+  "versionName": "1.0.104",
+  "apk": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.apk",
+  "msi": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.msi",
+  "notes": "文字の枠付き引き出し線・ページを別タブ/ウインドウの任意の位置へドラッグ・一覧に削除ボタン"
+}
