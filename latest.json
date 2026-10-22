@@ -1,0 +1,7 @@
+{
+  "versionCode": 108,
+  "versionName": "1.0.108",
+  "apk": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.apk",
+  "msi": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.msi",
+  "notes": "編集制限付きPDFが保存できない不具合・抜出し保存ボタン・一覧の選択でスクロールが戻る不具合・ボタン名の短縮"
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>PDFer ダウンロード</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #1d232b; --sub: #5b6573; --line: #e3e6eb;
+    --blue: #1f5fa8; --blue-ink: #ffffff; --soft: #eef3fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15181c; --card: #1e2227; --ink: #e9edf2; --sub: #a3adba; --line: #2e343b; --blue: #4d8fdb; --soft: #232b36; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; line-height: 1.7;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: .02em; }
+  .lead { color: var(--sub); margin: 0 0 6px; }
+  .ver { color: var(--sub); font-size: 14px; margin: 0 0 24px; min-height: 1.5em; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .card.mine { border-color: var(--blue); box-shadow: 0 0 0 2px var(--soft); }
+  .card h2 { font-size: 19px; margin: 0; }
+  .card .for { color: var(--sub); font-size: 14px; margin: 0; }
+  .btn {
+    display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 17px;
+    background: var(--blue); color: var(--blue-ink); border-radius: 10px; padding: 14px 12px;
+  }
+  .btn:active { opacity: .85; }
+  .size { color: var(--sub); font-size: 13px; text-align: center; margin: -4px 0 0; }
+  ol { margin: 0; padding-left: 1.3em; font-size: 15px; }
+  li { margin: 4px 0; }
+  .note { font-size: 14px; color: var(--sub); }
+  section.more { margin-top: 28px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  section.more h2 { font-size: 17px; margin: 0 0 6px; }
+  section.more p { margin: 6px 0; font-size: 15px; }
+  .mark { background: var(--soft); border-radius: 6px; padding: 0 6px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PDFer</h1>
+  <p class="lead">図面・書類のPDF(とJPG)に、手書き・寸法・矢印・文字などを書き込めるアプリです。</p>
+  <p class="ver" id="ver"></p>
+
+  <div class="cards">
+    <div class="card" id="pc">
+      <h2>パソコン版(Windows)</h2>
+      <p class="for">Windows 10 / 11</p>
+      <a class="btn" href="PDFer.msi" download>パソコン版をダウンロード</a>
+      <ol>
+        <li>ダウンロードした「PDFer.msi」を開きます。</li>
+        <li>「WindowsによってPCが保護されました」と出たら、<span class="mark">詳細情報</span> → <span class="mark">実行</span> を押します。</li>
+        <li>スタートメニューとデスクトップに「PDFer」ができます。</li>
+        <li>PDFをダブルクリックでPDFerで開くには、PDFerの設定(右上の歯車)→ <span class="mark">PDFの標準アプリにする</span> を押し、開いた画面で「.pdf」を「PDFer」にします。</li>
+      </ol>
+      <p class="note">「保護されました」は、お店のソフトのような発行元の証明書を付けていないために出る表示です。</p>
+    </div>
+
+    <div class="card" id="android">
+      <h2>スマホ・タブレット版(Android)</h2>
+      <p class="for">Android 12 以上</p>
+      <a class="btn" href="PDFer.apk" download>スマホ版をダウンロード</a>
+      <ol>
+        <li>「このファイルは有害な可能性があります」と出たら <span class="mark">ダウンロード</span> を押します。</li>
+        <li>終わったら <span class="mark">開く</span> を押します。</li>
+        <li>「この提供元のアプリを許可しない設定」と出たら、<span class="mark">設定</span> →「この提供元のアプリを許可」をONにして戻ります。</li>
+        <li><span class="mark">インストール</span> を押します。Google Play プロテクトの確認が出たら「詳細」→「インストールする」。</li>
+      </ol>
+      <p class="note">Playストア以外から入れるアプリには、どれも同じ表示が出ます。</p>
+    </div>
+  </div>
+
+  <section class="more">
+    <h2>更新</h2>
+    <p>新しい版ができると、アプリのホームの画面の上に「新しい版があります」と出ます。<span class="mark">更新する</span> を押すと更新できます(パソコン版はいったん閉じて、終わると開き直します)。</p>
+    <p>すぐ確かめたい時は、ホームの右上の歯車(設定)→「今すぐ確認」。</p>
+    <h2 style="margin-top:14px">使い方</h2>
+    <p>アプリのホームの画面の「?」(使い方)を見てください。</p>
+  </section>
+</main>
+<script>
+  // 今の版を出す(アプリが更新を確かめるのと同じ情報)
+  fetch("latest.json", { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (l) { if (l && l.versionName) document.getElementById("ver").textContent = "最新版 " + l.versionName; })
+    .catch(function () {});
+  // 使っている端末の方を目立たせ、スマホならスマホ版を先に出す
+  var android = /Android/i.test(navigator.userAgent);
+  var mine = document.getElementById(android ? "android" : "pc");
+  mine.classList.add("mine");
+  if (android) mine.parentNode.insertBefore(mine, mine.parentNode.firstChild);
+</script>
+</body>
+</html>
