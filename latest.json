@@ -1,0 +1,7 @@
+{
+  "versionCode": 124,
+  "versionName": "1.0.124",
+  "apk": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.apk",
+  "msi": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.msi",
+  "notes": "範囲で消す: 手書きは辺でちょうど切る・元の文字はふちにかかった字も取り除く。歯車の説明にCtrl編集モード・多角のShift・拡大ページ/スナップ/�"
+}
