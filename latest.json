@@ -1,0 +1,7 @@
+{
+  "versionCode": 139,
+  "versionName": "1.0.139",
+  "apk": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.apk",
+  "msi": "https://github.com/k3ntar303/pdfer-releases/raw/main/PDFer.msi",
+  "notes": "ロック注釈は取り込まず注釈のまま残す(切り替えボタンは廃止)・重なった同じ書き込みは開く時に1つにまとめる"
+}
